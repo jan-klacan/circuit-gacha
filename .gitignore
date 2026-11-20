@@ -179,3 +179,10 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Circuit Draw local data
+/album.json
+/.album.lock
+/.album-*.tmp
+/album.json.tmp
+.DS_Store

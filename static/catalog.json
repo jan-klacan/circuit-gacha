@@ -1,0 +1,531 @@
+{
+  "packSize": 4,
+  "odds": {
+    "standard": {
+      "Common": 67,
+      "Uncommon": 24,
+      "Rare": 8,
+      "Legendary": 1
+    },
+    "featured": {
+      "Common": 0,
+      "Uncommon": 72,
+      "Rare": 24,
+      "Legendary": 4
+    }
+  },
+  "packs": [
+    {
+      "id": "electrical",
+      "type": "Electrical",
+      "name": "Current",
+      "edition": "01",
+      "description": "From passive parts to power-control ICs."
+    },
+    {
+      "id": "quantum",
+      "type": "Quantum",
+      "name": "Superposition",
+      "edition": "02",
+      "description": "Single- and multi-qubit gates, plus readout."
+    },
+    {
+      "id": "membrane",
+      "type": "Electrical",
+      "name": "Membrane",
+      "edition": "03",
+      "description": "Ion channels and pumps in biological circuits.",
+      "subset": "Protein"
+    },
+    {
+      "id": "signaling",
+      "type": "Electrical",
+      "name": "Signal Cascade",
+      "edition": "04",
+      "description": "Receptors and switches that relay signals.",
+      "subset": "Protein"
+    }
+  ],
+  "cards": [
+    {
+      "id": "electrical-01",
+      "set": "electrical",
+      "number": 1,
+      "name": "Resistor",
+      "rarity": "Common",
+      "symbol": "resistor",
+      "description": "Limits current and sets voltage drops.",
+      "function": "PASSIVE"
+    },
+    {
+      "id": "electrical-02",
+      "set": "electrical",
+      "number": 2,
+      "name": "Capacitor",
+      "rarity": "Common",
+      "symbol": "capacitor",
+      "description": "Stores energy in an electric field.",
+      "function": "PASSIVE"
+    },
+    {
+      "id": "electrical-03",
+      "set": "electrical",
+      "number": 3,
+      "name": "Inductor",
+      "rarity": "Common",
+      "symbol": "inductor",
+      "description": "Stores energy in a magnetic field.",
+      "function": "PASSIVE"
+    },
+    {
+      "id": "electrical-04",
+      "set": "electrical",
+      "number": 4,
+      "name": "Signal Diode",
+      "rarity": "Common",
+      "symbol": "diode",
+      "description": "Conducts mainly in one direction.",
+      "function": "SEMICONDUCTOR"
+    },
+    {
+      "id": "electrical-05",
+      "set": "electrical",
+      "number": 5,
+      "name": "LED",
+      "rarity": "Uncommon",
+      "symbol": "led",
+      "description": "Emits light when forward-biased.",
+      "function": "OPTOELECTRONICS"
+    },
+    {
+      "id": "electrical-06",
+      "set": "electrical",
+      "number": 6,
+      "name": "Zener Diode",
+      "rarity": "Uncommon",
+      "symbol": "zener",
+      "description": "Holds a reference voltage in reverse breakdown.",
+      "function": "SEMICONDUCTOR"
+    },
+    {
+      "id": "electrical-07",
+      "set": "electrical",
+      "number": 7,
+      "name": "BJT",
+      "rarity": "Uncommon",
+      "symbol": "bjt",
+      "description": "Uses base current to control collector current.",
+      "function": "TRANSISTOR"
+    },
+    {
+      "id": "electrical-08",
+      "set": "electrical",
+      "number": 8,
+      "name": "MOSFET",
+      "rarity": "Rare",
+      "symbol": "mosfet",
+      "description": "Uses a gate voltage to switch or regulate current.",
+      "function": "TRANSISTOR"
+    },
+    {
+      "id": "electrical-09",
+      "set": "electrical",
+      "number": 9,
+      "name": "Crystal Oscillator",
+      "rarity": "Rare",
+      "symbol": "oscillator",
+      "description": "Generates a stable clock signal using quartz.",
+      "function": "TIMING"
+    },
+    {
+      "id": "electrical-10",
+      "set": "electrical",
+      "number": 10,
+      "name": "Operational Amplifier",
+      "rarity": "Rare",
+      "symbol": "amp",
+      "description": "Amplifies the voltage difference between its inputs.",
+      "function": "ANALOG IC"
+    },
+    {
+      "id": "electrical-11",
+      "set": "electrical",
+      "number": 11,
+      "name": "Instrumentation Amp",
+      "rarity": "Legendary",
+      "symbol": "instrumentation",
+      "description": "Amplifies small differential signals while rejecting shared noise.",
+      "function": "ANALOG IC"
+    },
+    {
+      "id": "electrical-12",
+      "set": "electrical",
+      "number": 12,
+      "name": "Switching Regulator",
+      "rarity": "Legendary",
+      "symbol": "regulator",
+      "description": "Converts voltage efficiently with a rapidly switched power stage.",
+      "function": "POWER IC"
+    },
+    {
+      "id": "quantum-01",
+      "set": "quantum",
+      "number": 1,
+      "name": "Pauli X",
+      "rarity": "Common",
+      "symbol": "X",
+      "description": "Flips the computational basis states.",
+      "function": "SINGLE-QUBIT GATE"
+    },
+    {
+      "id": "quantum-02",
+      "set": "quantum",
+      "number": 2,
+      "name": "Pauli Y",
+      "rarity": "Common",
+      "symbol": "Y",
+      "description": "Flips the basis states and changes their phases.",
+      "function": "SINGLE-QUBIT GATE"
+    },
+    {
+      "id": "quantum-03",
+      "set": "quantum",
+      "number": 3,
+      "name": "Pauli Z",
+      "rarity": "Common",
+      "symbol": "Z",
+      "description": "Adds a minus sign to the |1⟩ amplitude.",
+      "function": "SINGLE-QUBIT GATE"
+    },
+    {
+      "id": "quantum-04",
+      "set": "quantum",
+      "number": 4,
+      "name": "Hadamard",
+      "rarity": "Common",
+      "symbol": "H",
+      "description": "Maps the computational basis to equal superpositions.",
+      "function": "SINGLE-QUBIT GATE"
+    },
+    {
+      "id": "quantum-05",
+      "set": "quantum",
+      "number": 5,
+      "name": "Phase Gate",
+      "rarity": "Uncommon",
+      "symbol": "S",
+      "description": "Adds a quarter turn of phase to the |1⟩ amplitude.",
+      "function": "SINGLE-QUBIT GATE"
+    },
+    {
+      "id": "quantum-06",
+      "set": "quantum",
+      "number": 6,
+      "name": "Z Measurement",
+      "rarity": "Uncommon",
+      "symbol": "measure",
+      "description": "Returns a classical bit from a computational-basis measurement.",
+      "function": "READOUT"
+    },
+    {
+      "id": "quantum-07",
+      "set": "quantum",
+      "number": 7,
+      "name": "T Gate",
+      "rarity": "Uncommon",
+      "symbol": "T",
+      "description": "Adds a phase of π/4 to the |1⟩ amplitude.",
+      "function": "SINGLE-QUBIT GATE"
+    },
+    {
+      "id": "quantum-08",
+      "set": "quantum",
+      "number": 8,
+      "name": "CNOT",
+      "rarity": "Rare",
+      "symbol": "cnot",
+      "description": "Flips a target qubit when the control is |1⟩.",
+      "function": "TWO-QUBIT GATE"
+    },
+    {
+      "id": "quantum-09",
+      "set": "quantum",
+      "number": 9,
+      "name": "Controlled Z",
+      "rarity": "Rare",
+      "symbol": "cz",
+      "description": "Adds a minus sign to the |11⟩ amplitude.",
+      "function": "TWO-QUBIT GATE"
+    },
+    {
+      "id": "quantum-10",
+      "set": "quantum",
+      "number": 10,
+      "name": "SWAP",
+      "rarity": "Rare",
+      "symbol": "swap",
+      "description": "Exchanges the states of two qubits.",
+      "function": "TWO-QUBIT GATE"
+    },
+    {
+      "id": "quantum-11",
+      "set": "quantum",
+      "number": 11,
+      "name": "Toffoli",
+      "rarity": "Legendary",
+      "symbol": "toffoli",
+      "description": "Flips its target if both control qubits are |1⟩.",
+      "function": "THREE-QUBIT GATE"
+    },
+    {
+      "id": "quantum-12",
+      "set": "quantum",
+      "number": 12,
+      "name": "Fredkin",
+      "rarity": "Legendary",
+      "symbol": "fredkin",
+      "description": "Swaps two target qubits when the control is |1⟩.",
+      "function": "THREE-QUBIT GATE"
+    },
+    {
+      "id": "membrane-01",
+      "set": "membrane",
+      "number": 1,
+      "name": "Kir2.1",
+      "rarity": "Common",
+      "symbol": "pore",
+      "description": "An inward-rectifier potassium channel that helps stabilize membrane voltage.",
+      "function": "POTASSIUM CHANNEL"
+    },
+    {
+      "id": "membrane-02",
+      "set": "membrane",
+      "number": 2,
+      "name": "TASK-1",
+      "rarity": "Common",
+      "symbol": "pore",
+      "description": "Provides a potassium leak current sensitive to extracellular pH.",
+      "function": "POTASSIUM CHANNEL"
+    },
+    {
+      "id": "membrane-03",
+      "set": "membrane",
+      "number": 3,
+      "name": "ClC-1",
+      "rarity": "Common",
+      "symbol": "pore",
+      "description": "Provides chloride conductance in skeletal muscle.",
+      "function": "CHLORIDE CHANNEL"
+    },
+    {
+      "id": "membrane-04",
+      "set": "membrane",
+      "number": 4,
+      "name": "Nav1.4",
+      "rarity": "Common",
+      "symbol": "pore",
+      "description": "Carries voltage-gated sodium current in skeletal muscle.",
+      "function": "SODIUM CHANNEL"
+    },
+    {
+      "id": "membrane-05",
+      "set": "membrane",
+      "number": 5,
+      "name": "Kv1.2",
+      "rarity": "Uncommon",
+      "symbol": "pore",
+      "description": "Carries outward potassium current when activated by voltage.",
+      "function": "POTASSIUM CHANNEL"
+    },
+    {
+      "id": "membrane-06",
+      "set": "membrane",
+      "number": 6,
+      "name": "Cav1.2",
+      "rarity": "Uncommon",
+      "symbol": "pore",
+      "description": "Carries calcium into cells in response to depolarization.",
+      "function": "CALCIUM CHANNEL"
+    },
+    {
+      "id": "membrane-07",
+      "set": "membrane",
+      "number": 7,
+      "name": "HCN4",
+      "rarity": "Uncommon",
+      "symbol": "pore",
+      "description": "Opens on hyperpolarization and contributes to pacemaker activity.",
+      "function": "PACEMAKER CHANNEL"
+    },
+    {
+      "id": "membrane-08",
+      "set": "membrane",
+      "number": 8,
+      "name": "Na⁺/K⁺ ATPase",
+      "rarity": "Rare",
+      "symbol": "pump",
+      "description": "Uses ATP to move sodium out and potassium in.",
+      "function": "ION PUMP"
+    },
+    {
+      "id": "membrane-09",
+      "set": "membrane",
+      "number": 9,
+      "name": "SERCA2",
+      "rarity": "Rare",
+      "symbol": "pump",
+      "description": "Uses ATP to move calcium into the endoplasmic or sarcoplasmic reticulum.",
+      "function": "ION PUMP"
+    },
+    {
+      "id": "membrane-10",
+      "set": "membrane",
+      "number": 10,
+      "name": "Piezo1",
+      "rarity": "Rare",
+      "symbol": "pore",
+      "description": "Converts membrane tension into an ion current.",
+      "function": "MECHANOSENSOR"
+    },
+    {
+      "id": "membrane-11",
+      "set": "membrane",
+      "number": 11,
+      "name": "Ryanodine Receptor 2",
+      "rarity": "Legendary",
+      "symbol": "pore",
+      "description": "Releases stored calcium during cardiac contraction.",
+      "function": "CALCIUM CHANNEL"
+    },
+    {
+      "id": "membrane-12",
+      "set": "membrane",
+      "number": 12,
+      "name": "Connexin 43",
+      "rarity": "Legendary",
+      "symbol": "pore",
+      "description": "Forms gap junctions that couple adjacent cells electrically.",
+      "function": "GAP JUNCTION"
+    },
+    {
+      "id": "signaling-01",
+      "set": "signaling",
+      "number": 1,
+      "name": "Calmodulin",
+      "rarity": "Common",
+      "symbol": "switch",
+      "description": "Changes shape when it binds calcium and regulates downstream targets.",
+      "function": "CALCIUM SENSOR"
+    },
+    {
+      "id": "signaling-02",
+      "set": "signaling",
+      "number": 2,
+      "name": "Synaptotagmin 1",
+      "rarity": "Common",
+      "symbol": "switch",
+      "description": "Senses calcium to help trigger rapid neurotransmitter release.",
+      "function": "CALCIUM SENSOR"
+    },
+    {
+      "id": "signaling-03",
+      "set": "signaling",
+      "number": 3,
+      "name": "Gαs",
+      "rarity": "Common",
+      "symbol": "relay",
+      "description": "Stimulates adenylyl cyclase after activation by a receptor.",
+      "function": "G PROTEIN"
+    },
+    {
+      "id": "signaling-04",
+      "set": "signaling",
+      "number": 4,
+      "name": "Adenylyl Cyclase 5",
+      "rarity": "Common",
+      "symbol": "relay",
+      "description": "Produces cAMP in response to upstream signals.",
+      "function": "SIGNAL ENZYME"
+    },
+    {
+      "id": "signaling-05",
+      "set": "signaling",
+      "number": 5,
+      "name": "Phosphodiesterase 4D",
+      "rarity": "Uncommon",
+      "symbol": "relay",
+      "description": "Breaks down cAMP and helps end its signal.",
+      "function": "SIGNAL ENZYME"
+    },
+    {
+      "id": "signaling-06",
+      "set": "signaling",
+      "number": 6,
+      "name": "Protein Kinase A",
+      "rarity": "Uncommon",
+      "symbol": "switch",
+      "description": "Phosphorylates targets in response to cAMP.",
+      "function": "KINASE"
+    },
+    {
+      "id": "signaling-07",
+      "set": "signaling",
+      "number": 7,
+      "name": "Calcineurin",
+      "rarity": "Uncommon",
+      "symbol": "switch",
+      "description": "Removes phosphate groups in response to calcium and calmodulin.",
+      "function": "PHOSPHATASE"
+    },
+    {
+      "id": "signaling-08",
+      "set": "signaling",
+      "number": 8,
+      "name": "β₂ Adrenergic Receptor",
+      "rarity": "Rare",
+      "symbol": "relay",
+      "description": "Activates Gαs in response to adrenergic signals.",
+      "function": "GPCR"
+    },
+    {
+      "id": "signaling-09",
+      "set": "signaling",
+      "number": 9,
+      "name": "mGluR1",
+      "rarity": "Rare",
+      "symbol": "relay",
+      "description": "Couples glutamate sensing to intracellular calcium signaling.",
+      "function": "GPCR"
+    },
+    {
+      "id": "signaling-10",
+      "set": "signaling",
+      "number": 10,
+      "name": "CaMKII",
+      "rarity": "Rare",
+      "symbol": "switch",
+      "description": "Responds to calcium spikes and can retain activity after they pass.",
+      "function": "KINASE"
+    },
+    {
+      "id": "signaling-11",
+      "set": "signaling",
+      "number": 11,
+      "name": "Rhodopsin",
+      "rarity": "Legendary",
+      "symbol": "relay",
+      "description": "Triggers the visual signaling cascade when its chromophore absorbs light.",
+      "function": "PHOTORECEPTOR"
+    },
+    {
+      "id": "signaling-12",
+      "set": "signaling",
+      "number": 12,
+      "name": "GRIN1",
+      "rarity": "Legendary",
+      "symbol": "pore",
+      "description": "Forms an essential subunit of NMDA receptors that link synaptic activity to calcium signals.",
+      "function": "RECEPTOR SUBUNIT"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101317">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+  <title>Circuit Draw</title>
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="bar">
+    <div class="bar-inner">
+      <a class="brand" href="#packs" aria-label="Circuit Draw home">
+        <span class="brand-mark" aria-hidden="true"></span><span>Circuit Draw</span>
+      </a>
+      <nav aria-label="Game views">
+        <a id="nav-packs" href="#packs">Open packs</a>
+        <a id="nav-album" href="#album">Album <span id="nav-count" class="counter" hidden></span></a>
+      </nav>
+      <div class="local"><i></i> Offline game</div>
+    </div>
+  </header>
+  <main>
+    <p id="error" role="alert" hidden></p>
+    <p id="loading" role="status">Loading Circuit Draw…</p>
+    <noscript>Circuit Draw needs JavaScript to open packs and display your album.</noscript>
+    <section id="packs-view" hidden>
+      <div class="intro">
+        <h1>Open packs<span>.</span></h1>
+        <p>Collect the components behind electrical, quantum and biological circuits.</p>
+      </div>
+      <div class="bench">
+        <section id="stage" class="stage theme-electrical" aria-label="Pack opening area"></section>
+        <aside class="selection" aria-labelledby="pack-label">
+          <div class="aside-heading">
+            <h2 id="pack-label">Choose a pack</h2>
+            <p>Every set has its own collection of cards.</p>
+          </div>
+          <div id="pack-list"></div>
+        </aside>
+      </div>
+      <details class="odds">
+        <summary><span>Pull odds</span><span class="odds-note">Every pack includes an Uncommon or better.</span></summary>
+        <div class="odds-scroll"><table id="odds-table"></table></div>
+      </details>
+    </section>
+    <section id="album-view" hidden>
+      <div class="intro album-intro">
+        <div>
+          <h1>Your album<span>.</span></h1>
+          <p id="album-summary"></p>
+        </div>
+        <div class="album-meter"><span id="album-progress-label"></span><progress id="album-progress" aria-labelledby="album-progress-label"></progress></div>
+      </div>
+      <p id="album-error" role="alert" hidden></p>
+      <div class="filters" hidden>
+        <label>Set <select id="album-set"></select></label>
+        <label>Show <select id="album-filter"><option value="all">All cards</option><option value="owned">Collected</option><option value="missing">Missing</option></select></label>
+      </div>
+      <div id="album-grid" class="album-grid"></div>
+    </section>
+    <footer>Album saved on this device</footer>
+    <p id="status" class="sr-only" aria-live="polite"></p>
+  </main>
+  <dialog id="detail"><div id="detail-content"></div><div class="dialog-actions"><button id="flip-detail" class="quiet" type="button">Show back</button><form method="dialog"><button class="quiet">Close</button></form></div></dialog>
+</body>
+</html>
